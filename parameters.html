@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paramiterized function</title>
+</head>
+<body>
+    <!-- <button onclick="myfunction('janet')">Triger function</button> 
+    <button onclick="myfunction('i am a student')">call function</button>  -->
+
+    <div>
+        <input style="width: 100px; height: 200px;" id="display"></div> 
+        <button onclick="displaynumber(9)">9</button> 
+        <button onclick="displaynumber(8)">8</button> 
+        <button onclick="displaynumber(7)">7</button>
+        <button onclick="displaynumber(6)">6</button> 
+        <button onclick="displaynumber(5)">5</button> 
+        <button onclick="displaynumber(4)">4</button>
+        <button onclick="displaynumbe(3)">3</button>
+        <button onclick="displaynumber(2)">2</button> 
+        <button onclick="displaynumber(1)">1</button> 
+        <button onclick="displaynumber(0)">0</button> 
+        <button onclick="displaynumber('+')">+</button> 
+        <button onclick="displaynumber('-')">-</button> 
+        <button onclick="calculate('=')">=</button> 
+        <button onclick="deletenumber()">Del</button>  
+    </div>
+
+
+    <script>
+        // function myfunction(input){
+        //     console.log(input); 
+            
+        
+
+        function displaynumber(number){
+            document.getElementById('display').value += number; 
+
+        } 
+        function calculate(){
+            const calculate = document.getElementById('display').value; 
+
+            const result = eval(calculate); 
+            document.getElementById('display').value = result 
+
+        } 
+
+        function deletenumber(){
+            let input = document.getElementById('display').value; 
+
+            let newnumber = inpute.slice(0,-1) 
+                document.getElementById('display').value = newnumber; 
+        }
+    </script>
+</body>
+</html>

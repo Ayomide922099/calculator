@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intro to js</title>
+</head>
+<body>
+    <h5>wellcom to ile agbara</h5> 
+    <p id="display"></p>
+    
+
+    <input type="text" id="box">
+    <!--event handlers - handle functions e.g onclick--> 
+    <button onclick="myfunc()">click me </button> 
+
+    <div style="width: 500px; height: 250px; background-color: teal; margin-top: 10px;" id="hidnseek"></div> 
+    <button onclick="toggleappear()">Disappear</button>
+
+    <script>
+        // variables
+        // let ,var ,const -variable identifiers
+        var student = 'jamiu'; 
+        let a = 5; 
+        let students = ['oxford', 'wale', 'adeleke', 'ikechukwu', 'maleek', 'excel','paul', 6,8,90, ['janet', 'kule']] 
+
+        //key-value pair 
+        const studentinfo ={
+        name:'oxford',
+        marticno: 25787, 
+        cause: 'data science'
+        } 
+
+        let check = true;
+
+        // data types - string, number, array,object,boolean 
+        //[]-angle bracket ()-parenthesis []- curly bracket/braces 
+
+        //naming conventions 
+        //1.a variable name cannot start with a number but the number can be in the middel or at the end but never at the beginning 
+        const student1= '11j11j' 
+
+        //2. variable names cannot have a whitespace 
+        const student2 = 'adeleke' 
+        //casing in j5 
+                const student3 = 'oxford' //camel casing 
+                const student4 ='joy'//pascal casing 
+                const student5 = 'jezebel' //snake casing 
+
+        console.log(student);
+        //3.A variable name cannot be the name of javascript attribute
+        //const false = 90 
+
+        //4.A variable name should speak of what the value is 
+        //e.g const name = "546" 
+        console.log() 
+
+        document.getElementById('display').innerHTML = 'welcome to lautech' + '<br>'; 
+        document.getElementById('display').innerHTML += 'Welcome to day 2' + '<br>' 
+
+        document.getElementById('display').innerText += 'another one'
+
+        //styling 
+        document.getElementById('display').style.color = 'blue'; 
+        document.getElementById('display').style.paddingLeft = '20px';
+        document.getElementById('display').style.backgroundColor = 'red'; 
+        document.getElementById('display').style.marginBottom = '20px';
+
+        function myfunc() { 
+            let boxvalue = document.getElementById('box').value; 
+        console.log(boxvalue);  
+
+            console.log(boxvalue); 
+            console.log('im a chosen')
+        }
+
+        function toggleappear(){
+            document.getElementById('hidnseek').style.display = 'none' 
+            //document.getElementById.('hidnseek').style.display = 'none'
+        } 
+
+        
+    </script>
+</body>
+</html>  
+
+
